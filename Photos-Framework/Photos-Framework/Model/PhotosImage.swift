@@ -9,7 +9,7 @@ import Foundation
 import Photos
 import SwiftUI
 
-// MARK: - Photos
+// MARK: - PhotosImage
 struct PhotosImage: Identifiable, Equatable, Hashable {
     let id: String
     let image: UIImage

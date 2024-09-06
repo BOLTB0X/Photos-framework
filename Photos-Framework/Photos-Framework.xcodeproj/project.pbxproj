@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5455FE2C8AF52500E66060 /* PhotosYearsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5455FD2C8AF52500E66060 /* PhotosYearsView.swift */; };
+		BE5456002C8AF5AE00E66060 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5455FF2C8AF5AE00E66060 /* PhotosCell.swift */; };
 		BEE574912C88441E0003A647 /* Photos_FrameworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574902C88441E0003A647 /* Photos_FrameworkApp.swift */; };
 		BEE574932C88441E0003A647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574922C88441E0003A647 /* ContentView.swift */; };
 		BEE574952C8844210003A647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE574942C8844210003A647 /* Assets.xcassets */; };
@@ -16,11 +18,13 @@
 		BEE574A32C8849D40003A647 /* PhotosDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574A22C8849D40003A647 /* PhotosDetailView.swift */; };
 		BEE574A52C8849F10003A647 /* PhotosImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574A42C8849F10003A647 /* PhotosImageView.swift */; };
 		BEE574A72C884A6F0003A647 /* HorizontalScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574A62C884A6F0003A647 /* HorizontalScroll.swift */; };
-		BEE574A92C884BE30003A647 /* CustomLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574A82C884BE30003A647 /* CustomLazyVGrid.swift */; };
+		BEE574A92C884BE30003A647 /* CustomLazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574A82C884BE30003A647 /* CustomLazyVGridView.swift */; };
 		BEE574AB2C884CE20003A647 /* CompactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE574AA2C884CE20003A647 /* CompactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE5455FD2C8AF52500E66060 /* PhotosYearsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosYearsView.swift; sourceTree = "<group>"; };
+		BE5455FF2C8AF5AE00E66060 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		BEE5748D2C88441E0003A647 /* Photos-Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photos-Framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE574902C88441E0003A647 /* Photos_FrameworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos_FrameworkApp.swift; sourceTree = "<group>"; };
 		BEE574922C88441E0003A647 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		BEE574A22C8849D40003A647 /* PhotosDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailView.swift; sourceTree = "<group>"; };
 		BEE574A42C8849F10003A647 /* PhotosImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosImageView.swift; sourceTree = "<group>"; };
 		BEE574A62C884A6F0003A647 /* HorizontalScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScroll.swift; sourceTree = "<group>"; };
-		BEE574A82C884BE30003A647 /* CustomLazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLazyVGrid.swift; sourceTree = "<group>"; };
+		BEE574A82C884BE30003A647 /* CustomLazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLazyVGridView.swift; sourceTree = "<group>"; };
 		BEE574AA2C884CE20003A647 /* CompactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +50,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE5455FA2C8AF45E00E66060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEE574A02C88483D0003A647 /* PhotosImage.swift */,
+				BEE5749E2C88480B0003A647 /* PhotosImageViewmodel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE5455FB2C8AF48000E66060 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEE574922C88441E0003A647 /* ContentView.swift */,
+				BE5455FD2C8AF52500E66060 /* PhotosYearsView.swift */,
+				BEE574A42C8849F10003A647 /* PhotosImageView.swift */,
+				BEE574A82C884BE30003A647 /* CustomLazyVGridView.swift */,
+				BEE574A22C8849D40003A647 /* PhotosDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE5455FC2C8AF4C200E66060 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BEE574AA2C884CE20003A647 /* CompactCell.swift */,
+				BEE574A62C884A6F0003A647 /* HorizontalScroll.swift */,
+				BE5455FF2C8AF5AE00E66060 /* PhotosCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		BEE574842C88441E0003A647 = {
 			isa = PBXGroup;
 			children = (
@@ -66,16 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				BEE574902C88441E0003A647 /* Photos_FrameworkApp.swift */,
-				BEE574A02C88483D0003A647 /* PhotosImage.swift */,
-				BEE574922C88441E0003A647 /* ContentView.swift */,
-				BEE574A42C8849F10003A647 /* PhotosImageView.swift */,
-				BEE574A62C884A6F0003A647 /* HorizontalScroll.swift */,
-				BEE574A82C884BE30003A647 /* CustomLazyVGrid.swift */,
-				BEE574A22C8849D40003A647 /* PhotosDetailView.swift */,
-				BEE5749E2C88480B0003A647 /* PhotosImageViewmodel.swift */,
+				BE5455FC2C8AF4C200E66060 /* Components */,
+				BE5455FA2C8AF45E00E66060 /* Model */,
+				BE5455FB2C8AF48000E66060 /* View */,
 				BEE574942C8844210003A647 /* Assets.xcassets */,
 				BEE574962C8844210003A647 /* Preview Content */,
-				BEE574AA2C884CE20003A647 /* CompactCell.swift */,
 			);
 			path = "Photos-Framework";
 			sourceTree = "<group>";
@@ -160,12 +190,14 @@
 			files = (
 				BEE574A12C88483D0003A647 /* PhotosImage.swift in Sources */,
 				BEE574A72C884A6F0003A647 /* HorizontalScroll.swift in Sources */,
+				BE5455FE2C8AF52500E66060 /* PhotosYearsView.swift in Sources */,
 				BEE574A52C8849F10003A647 /* PhotosImageView.swift in Sources */,
 				BEE5749F2C88480B0003A647 /* PhotosImageViewmodel.swift in Sources */,
 				BEE574932C88441E0003A647 /* ContentView.swift in Sources */,
+				BE5456002C8AF5AE00E66060 /* PhotosCell.swift in Sources */,
 				BEE574912C88441E0003A647 /* Photos_FrameworkApp.swift in Sources */,
 				BEE574AB2C884CE20003A647 /* CompactCell.swift in Sources */,
-				BEE574A92C884BE30003A647 /* CustomLazyVGrid.swift in Sources */,
+				BEE574A92C884BE30003A647 /* CustomLazyVGridView.swift in Sources */,
 				BEE574A32C8849D40003A647 /* PhotosDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

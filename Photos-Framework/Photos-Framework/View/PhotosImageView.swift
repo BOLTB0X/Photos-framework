@@ -33,7 +33,7 @@ struct PhotosImageView: View {
                     )
                     .environmentObject(environmentObj)
                 } else {
-                    CustomLazyVGrid(
+                    CustomLazyVGridView(
                         isShowDetail: $isShowDetail,
                         isAction: $isAction,
                         animation: animation

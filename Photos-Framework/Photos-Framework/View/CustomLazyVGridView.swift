@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomLazyVGrid: View {
+struct CustomLazyVGridView: View {
     // MARK: Object
     @EnvironmentObject var environmentObj: PhotosImageViewmodel
     
@@ -160,7 +160,7 @@ struct CustomLazyVGrid: View {
     } // body
 }
 
-extension CustomLazyVGrid {
+extension CustomLazyVGridView {
     // MARK: - forEachEmptyCell
     @ViewBuilder
     private func forEachEmptyCell() -> some View {
@@ -192,7 +192,7 @@ extension CustomLazyVGrid {
     } // forEachPhotoCell
 }
 
-extension CustomLazyVGrid {
+extension CustomLazyVGridView {
     // MARK: - magnificationGesture
     private var magnificationGesture: some Gesture {
         MagnificationGesture()
@@ -274,7 +274,7 @@ extension CustomLazyVGrid {
 }
 
 // MARK: - Extension Methods
-extension CustomLazyVGrid {
+extension CustomLazyVGridView {
     // MARK: - resetZoomVariables
     private func resetZoomVariables() {
         calculateZoomFactor(at: currentZoomStageIndex)

@@ -14,7 +14,6 @@ class PhotosImageViewmodel: NSObject, ObservableObject, PHPhotoLibraryChangeObse
     // MARK: Published
     @Published var photosArr: [PhotosImage] = []
     @Published var yearsDicts: [Int: [PhotosImage]] = [:]
-    @Published var monthDicts: [Int: [Int: [PhotosImage]]] = [:]
     @Published var selectedPhotos: [PhotosImage] = []
     
     @Published var selected: PhotosImage?
@@ -74,9 +73,9 @@ extension PhotosImageViewmodel {
                         if !self.photosArr.contains(where: { $0.id == photo.id }) {
                             self.photosArr.append(photo)
                         }
-                        
+                                       
                         self.addPhotoForDic(photo)
-                        
+
                         self.processedPhotosCount += 1
                         
                         if self.processedPhotosCount == self.totalPhotosCount {
@@ -210,7 +209,7 @@ extension PhotosImageViewmodel {
             completion(image)
         } // requestImage
     } // fetchImage
-    
+
     // MARK: - addPhotoToYear
     private func addPhotoForDic(_ photo: PhotosImage) {
         guard let creationDate = photo.creationDate else { return }
@@ -224,18 +223,6 @@ extension PhotosImageViewmodel {
             }
         } else {
             yearsDicts[year] = [photo]
-        }
-        
-        if monthDicts[year] != nil {
-            if monthDicts[year]![month] != nil {
-                if !monthDicts[year]![month]!.contains(where: { $0.id == photo.id }) {
-                    monthDicts[year]![month]?.append(photo)
-                }
-            } else {
-                monthDicts[year]![month] = [photo]
-            }
-        } else {
-            monthDicts[year] = [month: [photo]]
         }
         
     } // addPhotoToYear
