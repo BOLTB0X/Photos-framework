@@ -57,9 +57,3 @@ struct PhotosImageView: View {
         } // NavigationView
     } // body
 }
-
-//struct PhotosImageView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PhotosImageView()
-//    }
-//}
