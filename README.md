@@ -2,11 +2,10 @@
 
 ![룰루랄라](https://i.pinimg.com/originals/3e/62/51/3e62512faa9cc1424574f3ce22e4c381.gif)
 
-| 분류   | gif                                                                                                                    | 기능                                                                                   |
-| ------ | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Home   | ![update](https://github.com/BOLTB0X/Photos-framework/blob/main/gif/%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8.gif?raw=true) | 업데이트                                                                               |
-| Detail | ![detail1](https://github.com/BOLTB0X/OMDb-API/blob/main/gif/homeDetail3.gif?raw=true)                                 | ![detail2](https://github.com/BOLTB0X/OMDb-API/blob/main/gif/homeDetail1.gif?raw=true) |
-| Search | ![search](https://github.com/BOLTB0X/OMDb-API/blob/main/gif/search.gif?raw=true)                                       | ![detail2](https://github.com/BOLTB0X/OMDb-API/blob/main/gif/search2.gif?raw=true)     |
+| 분류   | gif                                                                                                                    |
+| ------ | ---------------------------------------------------------------------------------------------------------------------- |
+| Update | ![update](https://github.com/BOLTB0X/Photos-framework/blob/main/gif/%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8.gif?raw=true) |
+| Zoom   | ![zoom](https://github.com/BOLTB0X/Photos-framework/blob/main/gif/Zoom.gif?raw=true)                                   |
 
 ## 참고
 
